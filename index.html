@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Intro component with sign up form</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="text">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.
+    </p>
+  </div>
+
+  <div class="right-container">
+    <div class="trial">
+      <p><span>Try it free 7 days</span> then $20/mo. thereafter<p>
+    </div>
+  
+    <form>
+      <div class="form-container">
+        <ul>
+          <li id="text-1">
+            <label for="text"></label>
+            <input type="text" placeholder="First Name" name="nombre" required>
+            <p name="mensaje" class="first-text">First Name cannot be empty</p>
+          </li>
+          <li>
+            <label for="text"></label>
+            <input type="text" placeholder="Last Name" name="apellido" required>
+            <p name="mensaje" class="last-text">Last Name cannot be empty</p>
+          </li>
+          <li>
+            <label for="email"></label>
+            <input type="email" placeholder="Email Address" name="correo" required>
+            <p name="mensaje" class="email-text">Looks like this is not an email</p>
+          </li>
+          <li>
+            <label for="password"></label>
+            <input type="password" placeholder="Password"  name="contraseña" required>
+            <p name="mensaje" class="pass-text">Password cannot be empty</p>
+          </li>
+        </ul>
+    
+        <button type="submit">Claim your free trial</button>
+    
+        <div class="terms">
+          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

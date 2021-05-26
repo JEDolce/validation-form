@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    min-height: 100vh;
+    padding: 0 2.5rem;
+    background-image: url('images/bg-intro-mobile.png');
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.text {
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    opacity: 0.9;
+}
+
+.text h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.text p {
+    padding-top: 2.5rem;
+}
+
+.trial {
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 10px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem 5rem;
+    font-size: 1.1rem;
+}
+
+.trial span {
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    min-height: 32rem;
+    border-radius: 15px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li input {
+    margin-top: 1rem;
+    width: 70vw;
+    height: 4rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 10px;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+li input:focus {                    /* Cambiar el borde del input */
+    outline: none;
+    border: 0.4px solid black;
+    box-shadow: 0 0 8px rgb(71, 70, 70);
+}
+
+.first-text, .last-text, .email-text, .pass-text {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.8rem;
+    visibility: hidden;
+}
+
+button {
+    width: 70vw;
+    height: 4rem;
+    margin: 1rem 0;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    box-shadow: 0 5px 0px rgba(3, 53, 33, 0.6);  /*ver*/
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    border: 0.4px solid hsl(154, 57%, 33%);
+}
+
+button:hover {
+    background-color: hsl(154, 59%, 51%, 0.8);
+}
+
+.terms {
+    text-align: center;
+    font-size: 0.8rem;
+    color: hsl(246, 25%, 77%);
+    line-height: 1.8rem;
+}
+
+.terms span {
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+.error {
+    visibility: visible;
+}
+
+
+/* Desktop Design */
+
+@media (min-width: 1440px) {
+    
+    body {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 5rem 12rem;
+        background-image: url('images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    .text {
+        width: 40vw;
+        text-align: left;
+        margin-right: 5.2rem;
+    }
+
+    .text h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .text p {
+        font-size: 1.25rem;
+        line-height: 2.1rem;
+    }
+
+    .trial {
+        padding: 1.5rem 5rem;
+        font-size: 1.2rem;
+    }
+
+    .right-container {
+        max-width: 40vw;
+    }
+
+    form {
+        height: 40rem;
+    }
+
+    li input {
+        width: 32vw;
+        height: 5rem;
+        font-size: 1.2rem;
+        padding-left: 2.5rem;
+        margin-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    .first-text, .last-text, .email-text, .pass-text {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 32vw;
+    }  
+    
+    .terms {
+        font-size: 0.9rem;
+    }
+
+}
+
+
